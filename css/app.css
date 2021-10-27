@@ -211,3 +211,27 @@ a {
     padding: 1rem 3.5rem;
     font-size: 1.5rem;
 }
+
+.hero-slide-toggle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--body-bg);
+    display: flex;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.hero-slide-toggle-prev,
+.hero-slide-toggle-next {
+    cursor: pointer;
+}
+
+.hero-slide-toggle-prev:hover,
+.hero-slide-toggle-next:hover {
+    color: var(--main-color);
+}
+
+.hero-slide-index {
+    margin: 0 30px;
+}
