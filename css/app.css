@@ -6,7 +6,7 @@
     --text-white: #ffffff;
     --text-gray: #868686;
     --main-hover: #9b2d25;
-    
+
     --section-space: 100px;
     --nav-size: 70px;
     --logo-size: 45px;
@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    font-family: 'Antonio', sans-serif;
+    font-family: "Antonio", sans-serif;
     background-color: var(--body-bg);
     padding-top: var(--nav-size);
     overflow-x: hidden;
@@ -137,8 +137,8 @@ a {
     position: relative;
     display: grid;
     place-items: center;
+    height: 100%;
 }
-
 
 .slide-info {
     overflow: visible;
@@ -161,7 +161,7 @@ a {
 }
 
 .top-down {
-    transform: translate(-200px);
+    transform: translateY(-200px);
     transition: transform 0.5s ease-in-out;
 }
 
