@@ -99,3 +99,115 @@ a {
 .menu-main li a {
     pointer-events: visible;
 }
+
+.hero-section {
+    height: calc(100vh - var(--nav-size));
+}
+
+.hero-section .row,
+.hero-section .col-4,
+.hero-section .col-8 {
+    height: 100%;
+}
+
+.slide-img-col {
+    position: relative;
+    background-color: var(--second-bg);
+}
+
+.slide-img-wrapper {
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+.slide-img {
+    --size: 700px;
+    height: var(--size);
+    width: var(--size);
+    overflow: hidden;
+}
+
+.slide-img img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.slide-info-wrapper {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+
+.slide-info {
+    overflow: visible;
+    position: absolute;
+    left: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slide-info.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.slide-info > div {
+    overflow: hidden;
+}
+
+.top-down {
+    transform: translate(-200px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide-info.active .top-down {
+    transform: translateY(0);
+}
+
+.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.delay-4 {
+    transition-delay: 0.4s;
+}
+
+.delay-6 {
+    transition-delay: 0.6s;
+}
+
+.slide-name {
+    white-space: nowrap;
+}
+
+.slide-name h3 {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 90px;
+}
+
+.slide-description {
+    margin-bottom: 90px;
+}
+
+.btn {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--main-color);
+    color: var(--text-white);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: var(--main-hover);
+}
+
+.btn-lg {
+    padding: 1rem 3.5rem;
+    font-size: 1.5rem;
+}
